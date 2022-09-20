@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// 01 - Crie um projeto em React 
+// 02 - Crie uma pasta components 
+// 03 - Todos os components do projeto deve estar dentro da pasta components 
+// 04- Crie um style.js para cada component 
+// 05 - Consuma o link da API com useEffect - http://hp-api.herokuapp.com/api/characters.
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import React from 'react'
+import Home from './Components/Home'
+import { GlobalStyle } from './Global/GlobalStyle'
+
+export default function App(){
+  return(
+    <>
+      <GlobalStyle/>
+      <Home/>
+    </>
+  )
 }
-
-export default App;
